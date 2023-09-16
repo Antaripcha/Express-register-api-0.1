@@ -22,7 +22,7 @@ router.post('/api/add',(req,res)=>{
             email:req.body.email,
             password:Hashpassword
         })
-        res.send('Data send');
+        res.status(200).send('Data send');
     }else{
         res.send('This email address is already in use.');
     }
